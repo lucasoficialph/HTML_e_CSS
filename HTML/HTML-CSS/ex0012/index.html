@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>
+        tente abri esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexivel">
+    </picture>
+    <h1>
+        Colocando audio no site
+    </h1>
+    <h2>
+        Primeira forma:
+    </h2>
+    <p>
+        Para usar o comando <strong>'audio'</strong> é necessario ele conter o parametro <strong>'controls autoplay'</strong> para que funcione. <br> Aceita apenas formatos <strong>MP3, WAV, OGG</strong>. 
+    </p>
+    <audio src="midia/LilWhindMóTristeza.mp3" controls autoplay></audio>
+    <h2>
+        Segunda forma:
+    </h2>
+    <p>
+        Para essa segunda forma o audio tem que ter o parametro <strong>'src'</strong> e não 'srcset'. <br> Em <strong>'type'</strong> colocamos <strong>'audio/formato do audio'.</strong>
+        <p>use o parametro <strong>'loop'</strong> dentro do comando <strong>'audio' para a musica ´da um loop assim que terminar de toca.</strong></p>
+    </p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/LilWhindMóTristeza.mp3" type="audio/mpeg">
+        <source src="midia/LilWhindMóTristeza.ogg" type="audio/ogg">
+        <source src="midia/LilWhindMóTristeza.wav">
+        <p>infelismente o audio não pode ser reproduzido. Click em <a href="../midia/LilWhindMóTristeza.mp3">Donwload</a> para baixar o arquivo.</p>
+    </audio>
+</body>
+</html>

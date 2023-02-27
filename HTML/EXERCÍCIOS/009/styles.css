@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+   background-color: rgb(39, 39, 39); 
+   color: white;
+   text-align: center;
+   img
+}
+h1 {
+    text-align:center;
+}
+p {
+    color: rgb(35, 104, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+a:link{
+    text-decoration: none;
+
+}
+p:hover{
+    text-decoration: none;
+    color: red;
+}
