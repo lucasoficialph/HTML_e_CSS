@@ -20,8 +20,8 @@ body {
 }
 
 .cabecalho {
-    height: 160px;
-    width: auto;
+    height: 168px;
+    width: 100%;
     margin: 0;
     background-image: linear-gradient(to bottom, rgb(0, 255, 157), rgb(0, 107, 66));
     box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.541);
@@ -50,12 +50,35 @@ body {
     padding-top: 5px;
 }
 
-.cabecalho_links {
+.cabecalho_links ul {
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: end;
     margin-left: 10px;
+}
+
+li {
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.603);
+    color: white;
+    text-decoration: none;
+}
+
+.cabecalho_links ul li a {
+    width: 20%;
+    height: 10%;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    background-color: rgba(0, 185, 114, 0.719);
+    border-radius: 3px;
 }
 
 @media (max-width: 385px) {
@@ -81,21 +104,6 @@ body {
     #video {
         display: none;
     }
-}
-
-a {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.603);
-    color: white;
-    text-decoration: none;
-    margin-right: 12px;
-}
-
-a:hover {
-    color: rgb(255, 255, 255);
-    transition: 0.3s;
-    background-color: rgba(0, 185, 114, 0.719);
-    border-radius: 3px;
-    padding: 1.5px;
 }
 
 .conteudo {
@@ -236,6 +244,7 @@ ul {
 
 li {
     list-style-type: none;
+    color: rgb(255, 255, 255);
 }
 
 .mais_conteudo > p {
