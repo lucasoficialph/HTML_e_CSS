@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/*/////////////////---CABEÇALHO---////////////////*/
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.cabecalho_titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho_titulo h1 {
+    font-size: 10vh;
+    color: white;
+}
+
+.cabecalho_titulo p {
+    font-size: 2vh;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.568);
+}
+
+.cabecalho_titulo a {
+    text-decoration: none;
+    color: white;
+}
+
+.cabecalho_titulo a:hover {
+    color: orange;
+    transition: 0.3s;
+}
+
+/*///////////////////////--ARTIGO--///////////////////*/
+
+.artigo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    background-color: white;
+}
+
+.artigo p {
+    display: flex;
+    max-width: 300px;
+    margin: 50px;
+    padding: 30px;
+    font-size: 3vh;
+    font-weight: bold;
+    line-height: 1.8em;
+}
+
+/*EFEITO_PARALLAX*/
+
+.texto_transparente {
+    width: 300px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.efeito_parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    background-image: url(imagens/background001.jpg);
+    background-color: rgba(0, 255, 255, 0);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+}
+
+.efeito_parallax_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-image: url(imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+
+}
+
+/*//////////////////////////////--RODAPÉ--/////////////////////////////*/
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.rodape strong {
+    color: orange;
+}
+
+/*//////////////////////////////--RESPONSIVIDADE--/////////////////////////////*/
+
+@media screen and (max-width: 570px) {
+    .cabecalho_titulo h1 {
+        font-size: 6vh;
+    }
+    .artigo p {
+        width: 150px;
+        margin: 30px;
+        padding: 10px;
+        font-size: 3vh;
+    }
+}
