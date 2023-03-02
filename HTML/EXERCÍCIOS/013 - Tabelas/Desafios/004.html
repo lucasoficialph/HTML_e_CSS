@@ -6,7 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 4</title>
 </head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+        width: 500px;
+        height: 200px;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    td, th{
+        text-align: center;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    .cinza {
+        color: white;
+        background-color: rgb(122, 122, 122);
+    }
+    .center {
+        text-align: start;
+    }
+    h2 {
+        color: green;
+    }
+</style>
 <body>
-    
+    <h1>Desafio 4</h1>
+    <table>
+        <tr>
+            <th class="cinza" scope="col" rowspan="2">Aréa</th>
+            <th class="cinza" scope="col" rowspan="2">Diciplinas</th>
+            <th class="cinza" scope="colgroup" colspan="2">Notas</th>
+            <th class="cinza" scope="col" rowspan="2">Média</th>
+        </tr>
+        <tr>
+            <th class="cinza" scope="col">Nota 1</th>
+            <th class="cinza" scope="col">Nota 2</th>
+        </tr>
+        <tr>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
+            <td>Matemática</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Fisica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="center" class="cinza" scope="row" colspan="4">Média de Exatas</th>
+            <td class="cinza" >0.0</td>
+        </tr>
+        <tr>
+            <th scope="rowgroup" rowspan="2">Humana</th>
+            <td>Historia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="center" class="cinza" scope="row" colspan="4">Média de Humanas</th>
+            <td class="cinza" >0.0</td>
+        </tr>
+    </table>
+    <h2>Desafio Concluido!</h2>
 </body>
 </html>
