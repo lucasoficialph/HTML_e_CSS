@@ -7,6 +7,9 @@
     <title>Tabela-2</title>
 </head>
 <style>
+    body {
+        height: 250vh;
+    }
     table {
         width: 500px;
         height: 10px;
@@ -36,6 +39,14 @@
     .populacao {
         width: 100px;
     }
+    table {
+        position: relative;
+    }
+    thead > tr > th {
+        position: sticky; /* EFEITO DE PRENDER A THEAD NO TOP DA TELA */
+        top: -1px;
+    }
+
     tbody > tr:nth-child(odd) {   /* "ODD" = ímpar */
     background-color: white;
     }
