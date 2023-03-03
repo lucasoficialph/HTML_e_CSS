@@ -8,7 +8,7 @@
 </head>
 <style>
     table {
-        width: 300px;
+        width: 500px;
         height: 150px;
         border-collapse: collapse;
         border: 1px solid black;
@@ -27,35 +27,40 @@
     .c3 {
         background-color: chartreuse;
     }
+    .tabela_resp {
+        overflow-x: auto;  /*Usando "overflow: auto" para deixar a tabela responsiva*/
+    }
 </style>
 <body>
     <h1>Usando Colgroup</h1>
-    <table>
-        <colgroup>  <!-- Usamos "colgroup" para personalizar as colunas  -->
-            <col class="c1">
-            <col class="c2">
-            <col class="c3">
-        </colgroup>
-        <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Idade</th>
-            <th scope="col">Altura</th>
-        </tr>
-        <tr>
-            <td>Lucas</td>
-            <td>20</td>
-            <td>1.80</td>
-        </tr>
-        <tr>
-            <td>Gabriela</td>
-            <td>19</td>
-            <td>1.60</td>
-        </tr>
-        <tr>
-            <td>Stefane</td>
-            <td>19</td>
-            <td>1.70</td>
-        </tr>
-    </table>
+    <div class="tabela_resp">
+        <table>
+            <colgroup>  <!-- Usamos "colgroup" para personalizar as colunas  -->
+                <col class="c1">
+                <col class="c2">
+                <col class="c3">
+            </colgroup>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Altura</th>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>20</td>
+                <td>1.80</td>
+            </tr>
+            <tr>
+                <td>Gabriela</td>
+                <td>19</td>
+                <td>1.60</td>
+            </tr>
+            <tr>
+                <td>Stefane</td>
+                <td>19</td>
+                <td>1.70</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
