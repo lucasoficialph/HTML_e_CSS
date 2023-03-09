@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario - 01</title>
+</head>
+<body>
+    <h1>Exercício 1 de formulario</h1>
+    <form action="cadastro.php" autocomplete="on" method="post"">
+        <div class="input_name">
+            <label for="iname">Name:</label>
+            <input type="text" name="name" id="iname" minlength="2" maxlength="15" required autocomplete="username">
+        </div>
+        <div class="input_password">
+            <label for="ipassword">Password:</label>
+            <input type="password" name="password" id="ipassword" minlength="6" maxlength="12" required autocomplete="current-password">          
+        </div>
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>
