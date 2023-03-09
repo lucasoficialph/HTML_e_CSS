@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>formulario 02</title>
-</head>
-<body>
-    <h1>formulario</h1>
+  </head>
+  <body>
+    <h1>Formulario</h1>
     <form action="#">
+      <fieldset>
+        <legend>Formulario</legend>
         <div class="input_name">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" minlength="5" maxlength="30" required>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            minlength="5"
+            maxlength="30"
+            required
+          />
         </div>
         <div class="input_senha">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" minlength="8" maxlength="30" required>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="8"
+            maxlength="30"
+            required
+          />
         </div>
         <label for="media">Média</label>
-        <input type="number" name="media" id="media">
-        <input type="date" name="data" id="data">
+        <input type="number" name="media" id="media" />
+        <input type="date" name="data" id="data" />
+        <button type="reset">Limpar</button>
         <button type="submit">Enviar</button>
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>
