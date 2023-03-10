@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 05</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="iselect">Estado</label>
+        <select name="select" id="iselect">
+            <option value="" selected>---escolha um estado---</option>
+            <optgroup label="estados-1">
+                <option value="SP">São Paulo</option>
+                <option value="MA">Maranhão</option>
+            </optgroup>
+            <optgroup label="estatos-2">
+                <option value="Ac">Acre</option>
+                <option value="AM">Amazonas</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <label for="iprof">Qual é a sua profissão: </label>
+        <input type="text" name="prof" id="iprof" list="sprof">
+        <datalist id="sprof">
+            <option value="">Cozinheiro</option>
+            <option value="">Pedreiro</option>
+            <option value="">Médico</option>
+            <option value="">Programador</option>
+            <option value="">Marombeiro</option>
+        </datalist>
+        <br>
+        <br>
+        <label for="imsg">Mensagem:</label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
