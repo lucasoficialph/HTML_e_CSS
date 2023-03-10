@@ -96,10 +96,12 @@ img {
 }
 
 .login {
+    background-color: var(--corbranca);
+    box-sizing: border-box;
+    border: 1px solid transparent;
     border-radius: 5px;
     color: var(--corpreta);
-    background-color: var(--corbranca);
-    
+    padding: 2px 10px;  
 }
 
 .login:hover {
@@ -140,20 +142,6 @@ img {
     margin: 1em 2em 0 2em;
 }
 
-.texto_conteudo {
-    width: 50%;
-}
-
-p {
-    padding: 5px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.479);
-    margin-top: 1em;
-    font-size: 18px;
-    text-align: center;
-    color: white;
-}
-
 @media screen and (max-width: 770px) {
     #texto_conteudo {
         transition: 0.5s;
@@ -168,7 +156,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 0.5em;
 }
 
 button {
