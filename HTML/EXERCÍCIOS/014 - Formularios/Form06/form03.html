@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario 8</title>
+  </head>
+  <body>
+    <h1>Exemplo de formulario</h1>
+    <form action="#" method="get">
+      <label for="iano">Em que ano vc nacel?</label>
+      <input
+        type="number"
+        name="ano"
+        id="iano"
+        min="1900"
+        max="2023"
+        oninput="calcular()"
+      />
+      <br />
+      <label for="iidade">Sua idade é: </label>
+      <output id="iidade">0</output>
+      <br />
+      <button type="submit">enviar</button>
+      <button type="reset">limpar</button>
+      <script>
+        function calcular() {
+          let atual = new Date().getFullYear();
+          iidade.ineerHTML = Number(atual) - Number(iano.value);
+        }
+      </script>
+    </form>
+  </body>
+</html>

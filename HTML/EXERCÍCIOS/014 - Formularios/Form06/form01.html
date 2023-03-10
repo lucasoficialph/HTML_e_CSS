@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 06</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <label for="inu1">1° Número</label>
+        <input type="number" name="num1" id="inum1" min="0" max="100" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        <br>
+        <br>
+        <label for="inu2">2° Número</label>
+        <input type="number" name="num2" id="inum2" min="0" max="100" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        <br>
+        <br>
+        <label for="isoma">A soma é: </label>
+        <output name="soma" id="isoma">0</output>
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
