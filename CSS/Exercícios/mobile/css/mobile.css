@@ -38,7 +38,14 @@ header {
   transform: translateX(180px);
 }
 
-.icon_menu img {
+.label_menu img {
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.label_close img {
   width: 30px;
   position: absolute;
   top: 10px;
@@ -54,7 +61,7 @@ header {
   height: 100vh;
   background-color: rgb(34, 34, 34);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.623);
-  transition: all 0.3s;
+  transition: all .3s linear;
 }
 
 nav {
@@ -75,4 +82,9 @@ nav > a {
   font-size: 1.3em;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+}
+
+nav > a:hover {
+  transition: .3s;
+  padding-left: 10px;
 }
