@@ -216,7 +216,7 @@ main {
   background-color: var(--color_menu_background);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
   width: 100vw;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
 }
 
@@ -230,10 +230,11 @@ main {
 
 .img_python {
   position: absolute;
-  bottom: 50%;
+  bottom: -500%;
   left: 50%;
   transform: translate(-50%, 50%);
   animation: language_python_animation 3s alternate infinite ease-in-out;
+  animation-delay: 3s;
 }
 
 /*#####################################################################*/
