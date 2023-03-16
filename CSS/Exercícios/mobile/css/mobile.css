@@ -208,14 +208,32 @@ main {
   user-select: none;
 }
 
-.projects_second_section {
+.languages_second_section {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color_menu_background);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
   width: 100vw;
-  height: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.img_javascript {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  animation: language_javascript_animation 3s alternate infinite ease-in-out;
+}
+
+.img_python {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  animation: language_python_animation 3s alternate infinite ease-in-out;
 }
 
 /*#####################################################################*/

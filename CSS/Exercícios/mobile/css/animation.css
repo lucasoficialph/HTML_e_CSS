@@ -1,6 +1,19 @@
 @charset "UTF-8";
 
-@keyframes text_lucas {
-    0% {top:;}
-    100% {top:;}
+@keyframes language_javascript_animation {
+    0% {
+        bottom: -500%;
+     }
+    100% {
+        bottom: 50%;
+    }
+}
+
+@keyframes language_python_animation {
+    0% {
+        bottom: -500%;
+     }
+    100% {
+        bottom: 50%;
+    }
 }
