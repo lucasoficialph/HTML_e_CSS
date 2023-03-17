@@ -145,7 +145,7 @@ nav > a:hover {
 /*#####################################################################*/
 
 main {
-  background-image: linear-gradient(45deg, var(--color_main_background), rgb(26, 26, 26));
+  background-image: linear-gradient(45deg, rgba(29, 29, 29, 0.973), var(--color_main_background), rgba(20, 20, 20, 0.966));
   width: 100vw;
   height: 920px;
   flex: 1 0 auto;
@@ -180,6 +180,7 @@ main {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
   width: 100vw;
   height: 250px;
+  user-select: none;
 }
 
 .profile_first_section h2 {
@@ -217,6 +218,7 @@ main {
   width: 100vw;
   height: 180px;
   overflow: hidden;
+  user-select: none;
 }
 
 .languages_second_section img {
@@ -255,6 +257,7 @@ main {
   width: 100vw;
   height: 180px;
   overflow: hidden;
+  user-select: none;
 }
 
 .technologies_third_section img {
@@ -266,6 +269,7 @@ main {
 /*#####################################################################*/
 /*##########                          -FOOTER-               ##########*/
 /*#####################################################################*/
+
 
 
 /* ###############################*/
