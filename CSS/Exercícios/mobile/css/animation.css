@@ -1,19 +1,10 @@
 @charset "UTF-8";
 
-@keyframes language_javascript_animation {
+@keyframes language_animation {
     0% {
-        bottom: -500%;
+        transform: scale(1);
      }
     100% {
-        bottom: 50%;
-    }
-}
-
-@keyframes language_python_animation {
-    0% {
-        bottom: -500%;
-     }
-    100% {
-        bottom: 50%;
+        transform: scale(1.2);
     }
 }

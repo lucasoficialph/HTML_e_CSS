@@ -147,7 +147,7 @@ nav > a:hover {
 main {
   background-image: linear-gradient(45deg, var(--color_main_background), rgb(26, 26, 26));
   width: 100vw;
-  height: 1000px;
+  height: 920px;
   flex: 1 0 auto;
 }
 
@@ -209,32 +209,58 @@ main {
 }
 
 .languages_second_section {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color_menu_background);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
   width: 100vw;
-  height: 250px;
+  height: 180px;
   overflow: hidden;
 }
 
-.img_javascript {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  animation: language_javascript_animation 3s alternate infinite ease-in-out;
+.languages_second_section img {
+  width: 80px;
+  padding: 0 20px;
+  animation: language_animation 2s alternate infinite linear;
 }
 
-.img_python {
-  position: absolute;
-  bottom: -500%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  animation: language_python_animation 3s alternate infinite ease-in-out;
-  animation-delay: 3s;
+/* ###############################*/
+/* ####      THIRD-SECTION   ####*/
+/* ###############################*/
+
+.title_third_section {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  width: 100%;
+  height: 90px;
+  padding: 10px 20px;
+}
+
+.title_third_section h1 {
+  color: var(--cor_text_white);
+  font-family: "Comfortaa", cursive;
+  font-size: 1.7em;
+  user-select: none;
+}
+
+.technologies_third_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color_menu_background);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+  width: 100vw;
+  height: 180px;
+  overflow: hidden;
+}
+
+.technologies_third_section img {
+  width: 80px;
+  padding: 0 20px;
+  animation: language_animation 2s alternate infinite linear;
 }
 
 /*#####################################################################*/
@@ -250,7 +276,7 @@ main {
   width: 100vw;
   height: 40px;
   flex-shrink: 0;
-  background-color: rgba(0, 0, 0, 0.932);
+  background-color: rgba(0, 0, 0, 0.918);
 }
 
 .creditos_footer p {
