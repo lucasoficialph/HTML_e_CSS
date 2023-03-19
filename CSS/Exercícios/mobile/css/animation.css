@@ -8,3 +8,17 @@
         transform: scale(1.2);
     }
 }
+
+@keyframes links_menu_animation {
+    0% {
+        padding-left: 0px;
+     }
+    100% {
+        padding-left: 15px;
+    }
+}
+
+@keyframes titles_sections_animation {
+    0% {bottom: -50px;}
+    100% {bottom: 10px;}
+}
