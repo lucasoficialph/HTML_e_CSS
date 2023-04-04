@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+
+* {
+    font-family: "Comfortaa", cursive;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.closeMenuBackground {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+#cabecalho {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.568);
+}
+
+.logo a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    cursor: pointer;
+    font-size: 2.3em;
+    color: white;
+}
+
+#openMenu {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+    width: 40px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#closeMenu {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#menuPrincipal {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 190px;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.568);
+    transition: .3s ease-in-out;
+}
+
+#menuPrincipal ul {
+    width: 100%;
+    position: absolute;
+    top: 65px;
+}
+
+#menuPrincipal li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 20px 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.568), inset 1px 1px 2px rgba(0, 0, 0, 0.568);
+}
+
+#menuPrincipal a {
+    width: 100%;
+    padding-left: 15px;
+    font-size: 1.1em;
+    color: white;
+}
+
+
+#menuPrincipal li:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+main {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33, 166, 255);
+    transition: .3s ease-in-out;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    border-radius: 20px;
+    box-sizing: border-box;
+    max-width: 600px;
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+}
+
+section h1 {
+    text-align: center;
+    padding: 10px 0; 
+    font-size: 2em;
+}
+
+section p {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 1.2em;
+}
